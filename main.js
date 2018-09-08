@@ -34,11 +34,15 @@ const printToDom = (stringToPrint, divId) => {
 let englishInput = document.getElementById('englishInput');
 
 let swedishClick = () => {
+    let newString='';
     for(let i=0; i<translator.swedish.length;i++){
         if(translator.swedish[i].english === englishInput.value){
-            printToDom(translator.swedish[i].translation,'popUp')
+            newString +=`<div class="translationArea">`;
+            newString +=`<h4 class="translationAreaWords">The translation for "${englishInput.value}" from English to Swedish is: ${translator.swedish[i].translation}</h4>`;
+            newString += `</div>`;
+            printToDom(newString,'popUp')
             break;
-        } else printToDom('Oops! Please try again.','popUp');
+        } else printToDom('Oops! Please choose a word from the list.','popUp');
     };
 };
 // if(englishInput.value==='merry'){
@@ -46,20 +50,29 @@ let swedishClick = () => {
 // };
 // printToDom(englishInput.value, 'popUp');
 let frenchClick = () => {
+    let newString = '';
     for(let i=0; i<translator.french.length;i++){
         if(translator.french[i].english === englishInput.value){
-            printToDom(translator.french[i].translation,'popUp')
+            newString +=`<div class="translationArea">`;
+            newString +=`<h4 class="translationAreaWords">The translation for "${englishInput.value}" from English to French is: ${translator.french[i].translation}</h4>`;
+            newString += `</div>`;
+            printToDom(newString,'popUp')
+            
             break;
-        } else printToDom('Oops! Please try again.','popUp');
+        } else printToDom('Oops! Please choose a word from the list.','popUp');
     };
 };
 
 let spanishClick = () => {
+    let newString='';
     for(let i=0; i<translator.spanish.length;i++){
         if(translator.spanish[i].english === englishInput.value){
-            printToDom(translator.spanish[i].translation,'popUp')
+            newString +=`<div class="translationArea">`;
+            newString +=`<h4 class="translationAreaWords">The translation for "${englishInput.value}" from English to Spanish is: ${translator.spanish[i].translation}</h4>`;
+            newString += `</div>`;
+            printToDom(newString,'popUp')
             break;
-        } else printToDom('Oops! Please try again.','popUp');
+        } else printToDom('Oops! Please choose a word from the list.','popUp');
     };
 };
 

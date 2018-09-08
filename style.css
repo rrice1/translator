@@ -1,3 +1,65 @@
 body{
-    background-color: aqua;
+    background-color: coral;
+}
+
+.imagesContainer{
+    display: flex;
+    flex-wrap: nowrap; 
+    justify-content: space-between;
+}
+
+.images{
+    width: 32%;
+    width: 400px;
+    height: 200px;
+}
+
+.myHeading{
+    display: flex;
+    justify-content: center;
+}
+
+.myForm{
+    display: flex;
+    justify-content: center;
+}
+
+.instructionsHeader{
+    display: flex;
+    justify-content: center;
+}
+
+.instructionsP{
+    display: flex;
+    justify-content: center;
+}
+
+.funbutton{
+    width: 32%;
+}
+
+.popUpArea{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-style: solid;
+}
+
+.popUpWords{
+    display: flex;
+    justify-content: center;
+}
+
+.translationArea{
+    display: flex;
+    justify-content: center;
+}
+
+.translationAreaWords{
+    display: flex;
+    justify-content: center;
+}
+
+.funLegend{
+text-align: center;
 }
