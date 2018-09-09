@@ -1,5 +1,5 @@
 body{
-    background-color: coral;
+    background-image:url(https://wallpapercave.com/wp/9OYMGcV.jpg); 
 }
 
 .imagesContainer{
@@ -40,8 +40,8 @@ body{
 .popUpArea{
     display: flex;
     justify-content: center;
-    background-color: white;
-    border-style: solid;
+    /* background-color: white; */
+    /* border-style: solid; */
 }
 
 .popUpWords{
