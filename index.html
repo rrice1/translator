@@ -7,26 +7,37 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-<form>
+    <h1 class="myHeading">Mini-Translator</h1>
+    <div class="imagesContainer">
+    <img class="images"src="https://legitbabenames.files.wordpress.com/2010/06/swedish-flag.jpg" alt="">
+    <img class="images"src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/1200px-Flag_of_France.svg.png" alt="">
+    <img class="images"src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Flag_of_Spain.svg/1200px-Flag_of_Spain.svg.png" alt="">
+    </div>
+    <br><br><br><br><br>
+    <div class="instructions"><h3 class="instructionsHeader">Instructions</h3>
+    <p class="instructionsP">This is my mini-translator that I created during my first month during the front-end side of NSS. </p>
+        <p class="instructionsP">You can type the words "merry, christmas, and, happy, new, year" into the input box and it translates them into Swedish, French, and Spanish by clicking their respective buttons.</p>
+    </div>
+<form class="myForm">
     <fieldset>
-        <legend>Have fun with the Translator!</legend>
+        <legend class="funLegend"><h3>Have fun with the Translator!</h3></legend>
         <p>
-            <label>Type Word in English Here!</label>
+            <label>Type Word in English Here:</label>
         <input id="englishInput" type="text">
         <br><br>
         
-        <input id ="swedish" type="button" value="Swedish">
-        <input id ="french" type="button" value="French">
-        <input id ="spanish" type="button" value="Spanish">
+        <input class="funButton" id ="swedish" type="button" value="Swedish">
+        <input class="funButton" id ="french" type="button" value="French">
+        <input class="funButton" id ="spanish" type="button" value="Spanish">
         </p>
     </fieldset>
 </form>
 
 <div class="popUpArea">
-    <p id="popUp"></p>
+    <h3 class="popUpWords" id="popUp"></h3>
 </div>
 
-    <script src="main.js"></script>
+    <!-- <script src="main.js"></script> -->
+    <script src="mainn.js"></script>
 </body>
 </html>
