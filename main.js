@@ -1,6 +1,7 @@
 
 let translator = {
     swedish: [
+      {english:"merry christmas and happy new year", translation:"god jul och gott nytt år"},
       {english:"merry", translation:"god"},
       {english:"christmas", translation:"jul"},
       {english:"and", translation:"och"},
